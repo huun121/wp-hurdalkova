@@ -1,10 +1,9 @@
 @import "./sass-utils/variables", "./sass-utils/mixins", "./sass-utils/functions", "./base/reset", "./base/typography";
 
-@import "./components/hover";
+@import "./components/body", "./components/hover";
 
-@import "./layout/header", "./layout/navigation";
+@import "./layout/header", "./layout/footer", "./layout/navigation";
 
-main {
 
-    background-color: $primary-color;
-}
+// pages
+@import "./pages/index";

@@ -1,9 +1,9 @@
 header {
     position: fixed;
+    z-index: 5;
     top: 0;
     right: 0;
-    background-color: rgba($primary-color, 0.95);
-    width: 100vw;
+    width: 100%;
 
     .wp-name img {
         position: absolute;
@@ -38,4 +38,4 @@ header {
     header .wp-name__title {
         display: inline;
     }
- }
+}
