@@ -1,0 +1,12 @@
+.hover {
+    @include transition-ease;
+
+    &:hover {
+        color: $secondary-color;
+        @include transition-ease;
+        * {
+            color: $secondary-color;
+            @include transition-ease;
+        }
+    }
+}

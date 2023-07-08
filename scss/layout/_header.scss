@@ -1,0 +1,41 @@
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba($primary-color, 0.95);
+    width: 100vw;
+
+    .wp-name img {
+        position: absolute;
+        z-index: 100;
+        top: 0.5rem;
+        left: 0.7rem;
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+
+    .wp-name__title {
+        display: none;
+        position: absolute;
+        top: 0rem;
+        left: 8rem;
+        font-size: 2rem;
+        text-transform: uppercase;
+        padding: 1.5rem 0;
+        font-weight: 400;
+        z-index: 100;
+        font-size: 1.5rem;
+    }
+}
+
+@include media-md {
+   header .wp-name img {
+        left: 2rem;
+   }
+}
+
+@include media-lg {
+    header .wp-name__title {
+        display: inline;
+    }
+ }
