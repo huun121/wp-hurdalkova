@@ -1,8 +1,9 @@
 @import "./sass-utils/variables", "./sass-utils/mixins", "./sass-utils/functions", "./base/reset", "./base/typography";
 
-@import "./components/body", "./components/hover";
+@import "./components/body", "./components/section", "./components/hover";
 
-@import "./layout/header", "./layout/footer", "./layout/navigation";
+@import "./layout/header", "./layout/footer", "./layout/navigation", "./layout/opening-hours",
+        "./layout/contact-info";
 
 
 // pages

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,12 +20,23 @@ a {
   color: #272727;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 body {
   min-width: 350px;
   min-height: 100vh;
   width: 100%;
+  background-color: #f8f8f8;
+}
+
+section {
+  padding: 1rem;
+}
+section h2 {
+  font-size: 1.7rem;
+  font-weight: 400;
 }
 
 .hover {
@@ -157,7 +172,7 @@ footer .footer__copyright {
   top: 0;
   left: 0;
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.85;
   visibility: hidden;
 }
 .nav.open {
@@ -242,6 +257,66 @@ footer .footer__copyright {
     font-size: 1.5rem;
   }
 }
+.opening-hours {
+  margin: auto;
+  max-width: 500px;
+}
+.opening-hours h2 {
+  padding: 0.5rem;
+  border-bottom: 1px solid #272727;
+  margin-bottom: 1rem;
+}
+.opening-hours__table {
+  display: grid;
+  grid-template-columns: 1fr repeat(2, 2fr);
+}
+.opening-hours__table * {
+  text-align: center;
+  padding: 0.25rem 0;
+}
+.opening-hours__table-day {
+  padding-left: 0.8rem;
+  text-align: left;
+}
+.opening-hours__table div:nth-child(3n) {
+  background-color: rgba(208, 240, 187, 0.3);
+}
+.opening-hours__table-comment {
+  padding-top: 1rem;
+  grid-column: 1/span 3;
+}
+
+.contact-information {
+  margin: auto;
+  max-width: 500px;
+}
+.contact-information h2 {
+  padding: 0.5rem;
+  border-bottom: 1px solid #272727;
+  margin-bottom: 1rem;
+}
+.contact-information p {
+  padding-bottom: 0.5rem;
+}
+.contact-information div {
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.contact-information__name p:first-child {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.contact-information__name .side-information {
+  padding-left: 2rem;
+  font-weight: 400;
+}
+.contact-information__contact {
+  padding-top: 0.5rem;
+}
+.contact-information__contact i {
+  padding-right: 0.7rem;
+}
+
 .index .welcome-page {
   position: relative;
   top: 0;
@@ -251,7 +326,11 @@ footer .footer__copyright {
   background: linear-gradient(to right, rgba(248, 248, 248, 0.6), rgba(248, 248, 248, 0.5)), url("./../../img/VH-14.jpg");
   background-size: cover;
   background-position: center;
-  background-position-y: 0%;
+  background-position-y: 100%;
+}
+.index .welcome-page section {
+  padding: 0;
+  background-color: transparent;
 }
 .index .welcome-page .welcome {
   position: relative;
@@ -266,7 +345,6 @@ footer .footer__copyright {
   position: absolute;
   top: 15%;
   left: 8%;
-  font-size: 1.7rem;
   font-weight: 300;
 }
 .index .welcome-page h1.welcome__name {
@@ -287,4 +365,42 @@ footer .footer__copyright {
   right: 8%;
   font-size: 1.4rem;
   font-weight: 300;
+}
+.index .welcome-page .actual {
+  position: absolute;
+  top: 34%;
+  left: 8%;
+  margin: auto;
+  width: 84%;
+  background-color: rgba(248, 248, 248, 0.6);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.index .welcome-page .actual h2 {
+  margin: 0.5rem 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #272727;
+}
+.index .welcome-page .actual ul {
+  padding: 0.5rem;
+}
+.index .welcome-page .actual ul li {
+  padding-bottom: 0.5rem;
+}
+.index .welcome-page__comment {
+  position: absolute;
+  bottom: 8%;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.index .welcome-page__comment a {
+  font-size: 1.1rem;
+  color: #5fb728;
+}
+.index .opening-hours, .index .contact {
+  margin: 2rem 0;
 }/*# sourceMappingURL=style.css.map */

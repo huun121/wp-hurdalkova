@@ -1,0 +1,35 @@
+.opening-hours {
+    margin: auto;
+    max-width: 500px;
+
+    h2 {
+        padding: 0.5rem;
+        border-bottom: 1px solid set-text-color($primary-color);
+        margin-bottom: 1rem;
+    }
+
+    &__table {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, 2fr);
+
+
+        * {
+            text-align: center;
+            padding: 0.25rem 0;
+        }
+
+        &-day {
+            padding-left: 0.8rem;
+            text-align: left;
+        }
+
+        div:nth-child(3n) {
+            background-color: lighten(rgba($secondary-color, 0.3), 35%);
+        }
+        
+        &-comment {
+            padding-top: 1rem;
+            grid-column: 1 / span 3;
+        }
+    }
+}

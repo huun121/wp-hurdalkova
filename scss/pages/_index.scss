@@ -1,6 +1,5 @@
 .index {
 
-
     .welcome-page {
         position: relative;
         top: 0;
@@ -15,8 +14,15 @@
         url("./../../img/VH-14.jpg");
         background-size: cover;
         background-position: center;
-        background-position-y: 0%;
+        background-position-y: 100%;
 
+        // resets
+        section {
+            padding: 0;
+            background-color: transparent;
+        }
+        
+        // welcome heading ---------
         .welcome {
             position: relative;
             top: 0;
@@ -31,7 +37,6 @@
             position: absolute;
             top: 15%;
             left: 8%;
-            font-size: 1.7rem;
             font-weight: 300;
         }
 
@@ -56,7 +61,56 @@
             font-size: 1.4rem;
             font-weight: 300;
         }
+
+        // actual information
+        .actual {
+            position: absolute;
+            top: 34%;
+            left: 8%;
+
+            margin: auto;
+            width: 84%;
+
+            background-color: rgba($primary-color, 0.6);
+
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 0.5rem;
+
+            h2 {
+                margin: 0.5rem 0.5rem;
+                padding-bottom: 0.5rem;
+                border-bottom: 1px solid set-text-color($primary-color);
+            }
+
+            ul {
+                padding: 0.5rem;
+
+                li {
+                    padding-bottom: 0.5rem;
+                }
+            }
+        }
+
+        &__comment {
+            position: absolute;
+            bottom: 8%;
+            width: 100%;
+            text-align: center;
+
+            font-weight: 500;
+            font-size: 1.1rem;
+
+            a {
+                font-size: 1.1rem;
+                color: darken($secondary-color, 5%);
+            }
+        }
+
     }
 
-    
+    .opening-hours, .contact {
+        margin: 2rem 0;
+    }
 }
