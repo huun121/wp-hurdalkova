@@ -1,20 +1,19 @@
 .contact-information {
     margin: auto;
-    max-width: 500px;
-
+    max-width: $max-width-s;
     h2 {
-        padding: 0.5rem;
-        border-bottom: 1px solid set-text-color($primary-color);
-        margin-bottom: 1rem;
+        padding: $space-s;
+        border-bottom: $border-thin solid set-text-color($primary-color);
+        margin-bottom: $space-l;
     }
 
     p {
-        padding-bottom: 0.5rem;
+        padding-bottom: $space-s;
     }
 
     div {
-        padding-left: 0.5rem;
-        padding-bottom: 0.5rem;
+        padding-left: $space-s;
+        padding-bottom: $space-s;
     }
 
     &__name {
@@ -24,15 +23,15 @@
         }
 
         .side-information {
-            padding-left: 2rem;
+            padding-left: $space-xl;
             font-weight: 400;
         }
     }
 
     &__contact {
-        padding-top: 0.5rem;
+        padding-top: $space-s;
         i {
-            padding-right: 0.7rem;
+            padding-right: $space-m;
         }
     }
 }

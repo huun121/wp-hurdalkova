@@ -25,9 +25,11 @@ a {
 }
 
 body {
+  position: relative;
   min-width: 350px;
   min-height: 100vh;
   width: 100%;
+  padding-bottom: 14rem;
   background-color: #f8f8f8;
 }
 
@@ -49,6 +51,11 @@ section h2 {
 .hover:hover * {
   color: #6acc2d;
   transition: all 0.5s ease-in-out;
+}
+
+.content {
+  max-width: 1200px;
+  margin: auto;
 }
 
 header {
@@ -91,24 +98,27 @@ header .wp-name__title {
 }
 footer {
   background-color: #6acc2d;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 footer * {
   color: #f8f8f8;
 }
 footer h2 {
   padding-top: 2rem;
-  padding-bottom: 1.7rem;
+  padding-bottom: 1.8rem;
   padding-left: 2rem;
   font-size: 1.7rem;
 }
-footer p, footer p i {
+footer p, footer p i, footer p a {
   font-weight: 300;
   font-size: 1.3rem;
   text-align: center;
   margin-bottom: 0.5rem;
 }
 footer p i {
-  padding-right: 0.3rem;
+  padding-right: 0.25rem;
 }
 footer .footer__copyright {
   margin-top: 2rem;
@@ -314,7 +324,34 @@ footer .footer__copyright {
   padding-top: 0.5rem;
 }
 .contact-information__contact i {
-  padding-right: 0.7rem;
+  padding-right: 0.8rem;
+}
+
+.insurance-contract__table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 0.8rem;
+  border-bottom: 1px solid #272727;
+}
+.insurance-contract__table-row-shortcut {
+  padding-left: 0.8rem;
+}
+.insurance-contract__table-row-name {
+  display: none;
+}
+.insurance-contract__table-row * {
+  padding-top: 0.8rem;
+  padding-bottom: 0.25rem;
+}
+
+main.page {
+  padding-top: 4.5rem;
+  margin: auto;
+}
+main.page h2 {
+  padding: 0.5rem;
+  border-bottom: 1px solid #272727;
+  margin-bottom: 1rem;
 }
 
 .index .welcome-page {
@@ -323,7 +360,7 @@ footer .footer__copyright {
   left: 0;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(248, 248, 248, 0.6), rgba(248, 248, 248, 0.5)), url("./../../img/VH-14.jpg");
+  background: linear-gradient(to right, rgba(248, 248, 248, 0.6), rgba(248, 248, 248, 0.5)), url("./../img/VH-14.jpg");
   background-size: cover;
   background-position: center;
   background-position-y: 100%;
@@ -380,6 +417,7 @@ footer .footer__copyright {
 }
 .index .welcome-page .actual h2 {
   margin: 0.5rem 0.5rem;
+  padding-left: 0.5rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #272727;
 }
@@ -387,6 +425,8 @@ footer .footer__copyright {
   padding: 0.5rem;
 }
 .index .welcome-page .actual ul li {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   padding-bottom: 0.5rem;
 }
 .index .welcome-page__comment {
@@ -401,6 +441,72 @@ footer .footer__copyright {
   font-size: 1.1rem;
   color: #5fb728;
 }
-.index .opening-hours, .index .contact {
-  margin: 2rem 0;
+.index .opening-hours, .index .contact-information {
+  margin: 2rem auto;
+}
+
+.contact {
+  max-width: 500px;
+}
+.contact .opening-hours {
+  margin-bottom: 2rem;
+}
+.contact .map {
+  margin: auto;
+  max-width: 500px;
+  margin-bottom: 2rem;
+  width: 90%;
+  height: 30vh;
+}
+.contact .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.insurance {
+  max-width: 500px;
+}
+
+.services .activity ul {
+  margin: 0 1rem;
+  padding-left: 1rem;
+  list-style: circle;
+}
+.services .activity ul li {
+  padding: 0.25rem 0;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #272727;
+}
+.services .pricing {
+  margin-bottom: 2rem;
+}
+.services .pricing .comment {
+  margin-top: -0.5rem;
+}
+.services .pricing .comment p {
+  font-weight: 300;
+  padding-left: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+.services .pricing-table {
+  margin: 0.8rem;
+}
+.services .pricing-table__record {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.25rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #272727;
+}
+.services .pricing-table__record .sidenote {
+  font-weight: 300;
+}
+.services .pricing-table__record-price {
+  align-self: flex-end;
+  white-space: nowrap;
+}
+.services .pricing-table__record-line {
+  flex-basis: 100%;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

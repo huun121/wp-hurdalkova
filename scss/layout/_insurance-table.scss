@@ -1,0 +1,21 @@
+.insurance-contract__table {
+    &-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 $space-m;
+        border-bottom: $border-thin solid set-text-color($primary-color);
+
+        &-shortcut {
+            padding-left: $space-m;
+        }
+        
+        &-name {
+            display: none;
+        }
+
+        * {
+            padding-top: $space-m;
+            padding-bottom: $space-xs;
+        }
+    }
+}

@@ -1,4 +1,24 @@
+// color
 $primary-color: #f8f8f8;
-$secondary-color: #6acc2d;//#8ADD55  #D3D3D3
+$secondary-color: #6acc2d;
+$text-color: #272727;
 
-$max-width: 1400px;
+// width
+$max-width-xl: 1400px;
+$max-width-l: 1200px;
+$max-width-m: 700px;
+$max-width-s: 500px;
+
+$min-width: 350px;
+
+// spaces
+$space-xl: 2rem;
+$space-l: 1rem;
+$space-m: 0.8rem;
+$space-s: 0.5rem;
+$space-xs: 0.25rem;
+
+// border
+$border-thick: 3px;
+$border-medium: 2px;
+$border-thin: 1px;

@@ -1,11 +1,11 @@
 .opening-hours {
     margin: auto;
-    max-width: 500px;
+    max-width: $max-width-s;
 
     h2 {
-        padding: 0.5rem;
-        border-bottom: 1px solid set-text-color($primary-color);
-        margin-bottom: 1rem;
+        padding: $space-s;
+        border-bottom: $border-thin solid set-text-color($primary-color);
+        margin-bottom: $space-l;
     }
 
     &__table {
@@ -15,11 +15,11 @@
 
         * {
             text-align: center;
-            padding: 0.25rem 0;
+            padding: $space-xs 0;
         }
 
         &-day {
-            padding-left: 0.8rem;
+            padding-left: $space-m;
             text-align: left;
         }
 
@@ -28,7 +28,7 @@
         }
         
         &-comment {
-            padding-top: 1rem;
+            padding-top: $space-l;
             grid-column: 1 / span 3;
         }
     }

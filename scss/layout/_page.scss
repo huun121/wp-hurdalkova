@@ -1,0 +1,11 @@
+main.page {
+    padding-top: 4.5rem;
+
+    margin: auto;
+
+    h2 {
+        padding: $space-s;
+        border-bottom: $border-thin solid set-text-color($primary-color);
+        margin-bottom: $space-l;
+    }
+}

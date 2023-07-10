@@ -1,10 +1,10 @@
 @import "./sass-utils/variables", "./sass-utils/mixins", "./sass-utils/functions", "./base/reset", "./base/typography";
 
-@import "./components/body", "./components/section", "./components/hover";
+@import "./components/body", "./components/section", "./components/hover", "./components/content";
 
 @import "./layout/header", "./layout/footer", "./layout/navigation", "./layout/opening-hours",
-        "./layout/contact-info";
+        "./layout/contact-info", "./layout/insurance-table", "./layout/page";
 
 
 // pages
-@import "./pages/index";
+@import "./pages/index", "./pages/contact", "./pages/insurance", "./pages/services", "./pages/about";

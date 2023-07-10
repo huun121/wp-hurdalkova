@@ -1,6 +1,6 @@
 @function set-text-color($color) {
     @if (lightness($color) > 50%) {
-        @return #272727;
+        @return $text-color;
     } @else {
         @return $primary-color;
     }

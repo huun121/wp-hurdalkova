@@ -11,7 +11,7 @@
             rgba($primary-color, 0.6),
             rgba($primary-color, 0.5)
         ),
-        url("./../../img/VH-14.jpg");
+        url("./../img/VH-14.jpg");
         background-size: cover;
         background-position: center;
         background-position-y: 100%;
@@ -73,22 +73,25 @@
 
             background-color: rgba($primary-color, 0.6);
 
-            border-top-left-radius: 0.5rem;
-            border-top-right-radius: 1rem;
-            border-bottom-left-radius: 1rem;
-            border-bottom-right-radius: 0.5rem;
+            border-top-left-radius: $space-s;
+            border-top-right-radius: $space-l;
+            border-bottom-left-radius: $space-l;
+            border-bottom-right-radius: $space-s;
 
             h2 {
-                margin: 0.5rem 0.5rem;
-                padding-bottom: 0.5rem;
-                border-bottom: 1px solid set-text-color($primary-color);
+                margin: $space-s $space-s;
+                padding-left: $space-s;
+                padding-bottom: $space-s;
+                border-bottom: $border-thin solid set-text-color($primary-color);
             }
 
             ul {
-                padding: 0.5rem;
+                padding: $space-s;
 
                 li {
-                    padding-bottom: 0.5rem;
+                    padding-left: $space-s;
+                    padding-right: $space-s;
+                    padding-bottom: $space-s;
                 }
             }
         }
@@ -110,7 +113,7 @@
 
     }
 
-    .opening-hours, .contact {
-        margin: 2rem 0;
+    .opening-hours, .contact-information {
+        margin: $space-xl auto;
     }
 }
