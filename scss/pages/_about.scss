@@ -13,10 +13,13 @@
     .about-us {
 
         &__team {
+            display: grid;
+            grid-template-columns: 100%;
             
             &-member {
-                display: grid;
-                grid-template-columns: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
                 &-name {
                     text-align: center;
@@ -29,6 +32,10 @@
                     padding: 0 $space-m $space-m $space-m;
                     font-size: 0.9rem;
                     font-weight: 300;
+                }
+
+                &-image {
+                    max-width: $max-width-xs;
                 }
             }
 
@@ -48,6 +55,52 @@
                 text-align: center;
                 padding: 0 $space-m $space-m $space-m;
                 font-size: 1.1rem;
+            }
+
+            &-image {
+                max-width: $max-width-m+100px;
+            }
+        }
+    }
+}
+
+@include media-md {
+    .about {
+        .about-us {
+    
+            &__team {
+                grid-template-columns: 1fr 1fr;
+                
+                h3 {
+                    grid-column: span 2;
+                }
+    
+                &-member:not(:last-child) {
+                    padding-bottom: 0;
+                }
+            }
+        }
+
+        .room-photo {
+            &__photo {
+                &-name {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
+
+@include media-lg {
+    .about {
+        .room-photo {
+            .content {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                h2 {
+                    grid-column: span 2;
+                }
             }
         }
     }
