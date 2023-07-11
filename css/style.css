@@ -40,6 +40,10 @@ section h2 {
   font-size: 1.7rem;
   font-weight: 400;
 }
+section h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
 
 .hover {
   transition: all 0.5s ease-in-out;
@@ -120,6 +124,10 @@ footer p, footer p i, footer p a {
 footer p i {
   padding-right: 0.25rem;
 }
+footer .footer__contact {
+  display: flex;
+  flex-direction: column;
+}
 footer .footer__copyright {
   margin-top: 2rem;
   padding: 1rem;
@@ -128,6 +136,16 @@ footer .footer__copyright {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  footer .footer__contact {
+    flex-direction: row;
+    justify-content: center;
+  }
+  footer .footer__contact p {
+    max-width: 400px;
+    flex-basis: 50%;
+  }
+}
 .menu-btn {
   position: absolute;
   z-index: 1;
@@ -353,6 +371,11 @@ main.page h2 {
   border-bottom: 1px solid #272727;
   margin-bottom: 1rem;
 }
+main.page h3 {
+  padding: 0.5rem;
+  border-bottom: 1px solid #272727;
+  margin-bottom: 1rem;
+}
 
 .index .welcome-page {
   position: relative;
@@ -360,7 +383,7 @@ main.page h2 {
   left: 0;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(248, 248, 248, 0.6), rgba(248, 248, 248, 0.5)), url("./../img/VH-14.jpg");
+  background: linear-gradient(to right, rgba(248, 248, 248, 0.6), rgba(248, 248, 248, 0.5)), url("./../img/VH-14_HD.webp");
   background-size: cover;
   background-position: center;
   background-position-y: 100%;
@@ -509,4 +532,41 @@ main.page h2 {
 .services .pricing-table__record-line {
   flex-basis: 100%;
   text-align: center;
+}
+
+.about p {
+  padding: 0.8rem;
+}
+.about img {
+  width: 95%;
+  border-radius: 0.8rem;
+  margin: auto;
+}
+.about .about-us__team-member {
+  display: grid;
+  grid-template-columns: 100%;
+}
+.about .about-us__team-member-name {
+  text-align: center;
+  padding: 0 0.8rem 0.25rem 0.8rem;
+  font-size: 1.1rem;
+}
+.about .about-us__team-member-role {
+  text-align: center;
+  padding: 0 0.8rem 0.8rem 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.about .about-us__team-member:not(:last-child) {
+  padding-bottom: 2rem;
+}
+.about .room-photo__photo {
+  display: grid;
+  grid-template-columns: 100%;
+  padding-bottom: 2rem;
+}
+.about .room-photo__photo-name {
+  text-align: center;
+  padding: 0 0.8rem 0.8rem 0.8rem;
+  font-size: 1.1rem;
 }/*# sourceMappingURL=style.css.map */

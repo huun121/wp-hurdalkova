@@ -1,0 +1,54 @@
+.about {
+
+    p {
+        padding: $space-m;
+    }
+
+    img {
+        width: 95%;
+        border-radius: $space-m;
+        margin: auto;
+    }
+
+    .about-us {
+
+        &__team {
+            
+            &-member {
+                display: grid;
+                grid-template-columns: 100%;
+
+                &-name {
+                    text-align: center;
+                    padding: 0 $space-m $space-xs $space-m;
+                    font-size: 1.1rem;
+                }
+
+                &-role {
+                    text-align: center;
+                    padding: 0 $space-m $space-m $space-m;
+                    font-size: 0.9rem;
+                    font-weight: 300;
+                }
+            }
+
+            &-member:not(:last-child) {
+                padding-bottom: $space-xl;
+            }
+        }
+    }
+
+    .room-photo {
+        &__photo {
+            display: grid;
+            grid-template-columns: 100%;
+            padding-bottom: $space-xl;
+
+            &-name {
+                text-align: center;
+                padding: 0 $space-m $space-m $space-m;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}

@@ -27,6 +27,11 @@ footer {
         padding-right: $space-xs;
     }
 
+    .footer__contact {
+        display: flex;
+        flex-direction: column;
+    }
+
     .footer__copyright {
         margin-top: $space-xl;
         padding: $space-l;
@@ -34,5 +39,19 @@ footer {
 
         font-size: 0.8rem;
         text-align: center;
+    }
+}
+
+@include media-md {
+    footer {
+        .footer__contact {
+            flex-direction: row;
+            justify-content: center;
+            
+            p {
+                max-width: $max-width-xs;
+                flex-basis: 50%;
+            }
+        }
     }
 }

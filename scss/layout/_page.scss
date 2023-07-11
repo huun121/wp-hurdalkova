@@ -8,4 +8,10 @@ main.page {
         border-bottom: $border-thin solid set-text-color($primary-color);
         margin-bottom: $space-l;
     }
+
+    h3 {
+        padding: $space-s;
+        border-bottom: $border-thin solid set-text-color($primary-color);
+        margin-bottom: $space-l;
+    }
 }
