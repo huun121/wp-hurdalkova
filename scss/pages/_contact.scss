@@ -18,3 +18,32 @@
         }
     }
 }
+
+@include media-md {
+    .contact {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: $space-l;
+
+        .opening-hours {
+            width: 100%;
+            grid-column: 2;
+            grid-row: 1;
+
+            margin-top: 0;
+        }
+        .contact-information {
+            width: 100%;
+
+            margin-top: 0;
+        }
+
+        .map {
+            max-width: 100%;
+            width: 80%;
+            height: 50vh;
+            grid-column: span 2;
+        }
+    }
+}

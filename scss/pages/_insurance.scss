@@ -1,3 +1,9 @@
 .insurance {
     max-width: $max-width-s;
 }
+
+@include media-md {
+    .insurance {
+        max-width: 1000px;
+    }
+}

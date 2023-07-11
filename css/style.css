@@ -351,7 +351,7 @@ footer .footer__copyright {
   margin: 0 0.8rem;
   border-bottom: 1px solid #272727;
 }
-.insurance-contract__table-row-shortcut {
+.insurance-contract__table-row-code {
   padding-left: 0.8rem;
 }
 .insurance-contract__table-row-name {
@@ -362,6 +362,22 @@ footer .footer__copyright {
   padding-bottom: 0.25rem;
 }
 
+@media screen and (min-width: 768px) {
+  .insurance-contract__table-row {
+    grid-template-columns: 1fr 1fr 4fr;
+  }
+  .insurance-contract__table-row-name {
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .insurance-contract__table-row {
+    grid-template-columns: 1fr 1fr 3fr;
+  }
+  .insurance-contract__table-row-name {
+    display: block;
+  }
+}
 main.page {
   padding-top: 4.5rem;
   margin: auto;
@@ -486,10 +502,39 @@ main.page h3 {
   height: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .contact {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .contact .opening-hours {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 0;
+  }
+  .contact .contact-information {
+    width: 100%;
+    margin-top: 0;
+  }
+  .contact .map {
+    max-width: 100%;
+    width: 80%;
+    height: 50vh;
+    grid-column: span 2;
+  }
+}
 .insurance {
   max-width: 500px;
 }
 
+@media screen and (min-width: 768px) {
+  .insurance {
+    max-width: 1000px;
+  }
+}
 .services .activity ul {
   margin: 0 1rem;
   padding-left: 1rem;
@@ -509,6 +554,7 @@ main.page h3 {
 .services .pricing .comment p {
   font-weight: 300;
   padding-left: 0.8rem;
+  padding-right: 0.8rem;
   padding-bottom: 0.8rem;
 }
 .services .pricing-table {
@@ -534,6 +580,13 @@ main.page h3 {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .services .pricing .comment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .about p {
   padding: 0.8rem;
 }
