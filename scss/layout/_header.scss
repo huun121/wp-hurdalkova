@@ -12,6 +12,16 @@ header {
         left: 0.7rem;
         height: 3.5rem;
         width: 3.5rem;
+        transform: translateY(-10rem);
+        @include transition-ease;
+
+        &.open {
+            transform: translateY(0);
+        }
+
+        &:hover {
+            rotate: 10deg;
+        }
     }
 
     .wp-name__title {
@@ -30,6 +40,7 @@ header {
 
 @include media-md {
    header .wp-name img {
+        transform: translateY(0);
         left: 2rem;
    }
 }

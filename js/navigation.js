@@ -5,6 +5,8 @@ const nav = document.querySelector('.nav');
 const menuNav = document.querySelector('.menu-nav');
 const navItems = document.querySelectorAll('.menu-nav__item')
 
+const logo = document.querySelector('.wp-name img')
+
 let showMenu = false;
 
 menuBtn.addEventListener('click', toggleMenu);
@@ -16,12 +18,16 @@ function toggleMenu() {
         menuNav.classList.add('open');
         navItems.forEach(item => item.classList.add('open'));
 
+        logo.classList.add('open');
+
         showMenu = true;
     } else {
         hamburger.classList.remove('open');
         nav.classList.remove('open');
         menuNav.classList.remove('open');
         navItems.forEach(item => item.classList.remove('open'));
+
+        logo.classList.remove('open');
 
         showMenu = false;
     }

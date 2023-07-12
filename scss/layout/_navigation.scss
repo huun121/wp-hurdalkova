@@ -63,6 +63,7 @@
 
     &.open {
         visibility: visible;
+        opacity: 0.9;
     }
 
     .menu-nav {
@@ -74,7 +75,7 @@
         overflow: hidden;
         background: $primary-color;
         list-style-type: none;
-        padding-right: 1rem;
+
         transform: translateY(-100%);
         @include transition-ease;
 
@@ -101,6 +102,7 @@
             text-transform: uppercase;
             padding: 1.5rem 0;
             font-weight: 300;
+            opacity: 1;
             @include transition-ease;
 
             &:hover {
@@ -128,6 +130,7 @@
             display: block;
             transform: translateY(0);
             height: 100%;
+            padding-right: $space-l;
             text-align: right;
 
             &__item {
