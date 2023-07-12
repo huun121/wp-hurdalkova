@@ -399,7 +399,7 @@ main.page h3 {
   left: 0;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(248, 248, 248, 0.6), rgba(248, 248, 248, 0.5)), url("./../img/VH-14_HD.webp");
+  background: linear-gradient(to right, rgba(248, 248, 248, 0.6), rgba(248, 248, 248, 0.5)), url("./../img/HD/VH-14.webp");
   background-size: cover;
   background-position: center;
   background-position-y: 100%;
@@ -517,6 +517,10 @@ main.page h3 {
     display: grid;
     grid-template-columns: 5% 60% 5% 25% 5%;
     grid-template-rows: 10% 40% 40% 10%;
+    background: linear-gradient(to right, rgba(248, 248, 248, 0.6), rgba(248, 248, 248, 0.5)), url("./../img/Full-HD/VH-14.webp");
+    background-size: cover;
+    background-position: center;
+    background-position-y: 100%;
   }
   .index .welcome-page .welcome {
     grid-column: 2;
@@ -675,6 +679,11 @@ main.page h3 {
   border-radius: 0.8rem;
   margin: auto;
 }
+.about picture {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
 .about .about-us__team {
   display: grid;
   grid-template-columns: 100%;
@@ -696,14 +705,16 @@ main.page h3 {
   font-weight: 300;
 }
 .about .about-us__team-member-image {
+  width: 100%;
   max-width: 400px;
 }
 .about .about-us__team-member:not(:last-child) {
   padding-bottom: 2rem;
 }
 .about .room-photo__photo {
-  display: grid;
-  grid-template-columns: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-bottom: 2rem;
 }
 .about .room-photo__photo-name {
@@ -718,6 +729,7 @@ main.page h3 {
 @media screen and (min-width: 768px) {
   .about .about-us__team {
     grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
   .about .about-us__team h3 {
     grid-column: span 2;
@@ -728,11 +740,15 @@ main.page h3 {
   .about .room-photo__photo-name {
     font-size: 1.3rem;
   }
+  .about .room-photo__photo-image {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1024px) {
   .about .room-photo .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
   .about .room-photo .content h2 {
     grid-column: span 2;

@@ -10,6 +10,12 @@
         margin: auto;
     }
 
+    picture {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
     .about-us {
 
         &__team {
@@ -35,6 +41,7 @@
                 }
 
                 &-image {
+                    width: 100%;
                     max-width: $max-width-xs;
                 }
             }
@@ -47,8 +54,9 @@
 
     .room-photo {
         &__photo {
-            display: grid;
-            grid-template-columns: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             padding-bottom: $space-xl;
 
             &-name {
@@ -70,6 +78,7 @@
     
             &__team {
                 grid-template-columns: 1fr 1fr;
+                gap: $space-l;
                 
                 h3 {
                     grid-column: span 2;
@@ -86,6 +95,10 @@
                 &-name {
                     font-size: 1.3rem;
                 }
+
+                &-image {
+                    width: 100%;
+                }
             }
         }
     }
@@ -97,6 +110,7 @@
             .content {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+                gap: $space-l;
 
                 h2 {
                     grid-column: span 2;
