@@ -24,6 +24,10 @@ a {
   font-weight: 500;
 }
 
+.significant {
+  color: red;
+}
+
 body {
   position: relative;
   min-width: 350px;
@@ -477,6 +481,7 @@ main.page h3 {
   padding: 0.5rem;
 }
 .index .welcome-page .actual ul li {
+  line-height: 1.2;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-bottom: 0.5rem;
