@@ -727,6 +727,16 @@ main.page h3 {
 .about .about-us__team-member:not(:last-child) {
   padding-bottom: 2rem;
 }
+.about .about-us__team-whole {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about .about-us__team-whole-image {
+  width: 100%;
+  max-width: 800px;
+}
 .about .room-photo__photo {
   display: flex;
   flex-direction: column;
@@ -742,13 +752,22 @@ main.page h3 {
   max-width: 800px;
 }
 
+@media screen and (min-width: 460px) {
+  .about .about-us__team-whole-image {
+    width: 95%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .about .about-us__team {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
-  .about .about-us__team h3 {
+  .about .about-us__team h3, .about .about-us__team-whole {
     grid-column: span 2;
+  }
+  .about .about-us__team-whole-image {
+    width: 100%;
   }
   .about .about-us__team-member:not(:last-child) {
     padding-bottom: 0;
@@ -761,6 +780,9 @@ main.page h3 {
   }
 }
 @media screen and (min-width: 1024px) {
+  .about .about-us__team-whole {
+    padding-top: 2rem;
+  }
   .about .room-photo .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
