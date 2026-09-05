@@ -78,8 +78,21 @@
                 </div>
             </section>
 
-            <div class="map content">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2601.850059756427!2d17.390304876845207!3d49.29818341965593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471306f5b74c3435%3A0x989a9d5ce16671e9!2zTVVEci4gVmxhZGltw61yYSBIdXJkw6Fsa292w6E!5e0!3m2!1scs!2scz!4v1688925249566!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map content" data-map>
+                <div class="map__placeholder">
+                    <svg class="map__marker" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 10.5A3.5 3.5 0 1 1 12 5a3.5 3.5 0 0 1 0 7.5Z" />
+                    </svg>
+                    <h2>Najdete nás v Kroměříži</h2>
+                    <p>Komenského náměstí 14/372</p>
+                    <p class="map__privacy-note">
+                        Interaktivní mapu poskytuje služba Google Maps. Načte se až po vašem potvrzení.
+                    </p>
+                    <div class="map__actions">
+                        <button class="map__load-button" type="button" data-map-load>Načíst mapu</button>
+                        <a class="map__external-link" href="https://www.google.com/maps/search/?api=1&amp;query=MUDr.%20Vladim%C3%ADra%20Hurd%C3%A1lkov%C3%A1%2C%20Komensk%C3%A9ho%20n%C3%A1m%C4%9Bst%C3%AD%2014%2F372%2C%20Krom%C4%9B%C5%99%C3%AD%C5%BE" target="_blank" rel="noopener noreferrer">Otevřít v Google Maps</a>
+                    </div>
+                </div>
             </div>
 
             <section id="opening-hours" class="opening-hours">
@@ -137,5 +150,6 @@
 
     <script src="https://kit.fontawesome.com/3e254a78f1.js" crossorigin="anonymous"></script>
     <script src="js/navigation.js"></script>
+    <script src="js/map.js"></script>
 </body>
 </html>

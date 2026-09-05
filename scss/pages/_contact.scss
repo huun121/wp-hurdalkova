@@ -10,11 +10,84 @@
         max-width: $max-width-s;
         margin-bottom: 2rem;
         width: 90%;
-        height: 30vh;
+        min-height: 320px;
+        border: $border-thin solid rgba($text-color, 0.18);
+        border-radius: $space-s;
+        overflow: hidden;
+        background: linear-gradient(135deg, rgba($secondary-color, 0.12), rgba($primary-color, 0.95));
 
         iframe {
+            display: block;
             width: 100%;
-            height: 100%;
+            min-height: 320px;
+            border: 0;
+        }
+
+        &__placeholder {
+            min-height: 320px;
+            padding: $space-xl;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        &__marker {
+            width: 3.5rem;
+            height: 3.5rem;
+            fill: $secondary-color;
+            margin-bottom: $space-m;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            margin-bottom: $space-s;
+        }
+
+        &__privacy-note {
+            max-width: 390px;
+            margin-top: $space-l;
+            color: rgba($text-color, 0.72);
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        &__actions {
+            margin-top: $space-l;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: $space-m;
+        }
+
+        &__load-button,
+        &__external-link {
+            padding: $space-m $space-l;
+            border-radius: $space-xs;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        &__load-button {
+            border: $border-medium solid $secondary-color;
+            background-color: $secondary-color;
+            color: $text-color;
+
+            &:hover,
+            &:focus-visible {
+                background-color: darken($secondary-color, 8%);
+                border-color: darken($secondary-color, 8%);
+            }
+        }
+
+        &__external-link {
+            text-decoration: underline;
+
+            &:hover,
+            &:focus-visible {
+                color: darken($secondary-color, 15%);
+            }
         }
     }
 }
@@ -42,8 +115,17 @@
         .map {
             max-width: 100%;
             width: 80%;
-            height: 50vh;
+            min-height: 450px;
             grid-column: span 2;
+
+            iframe,
+            &__placeholder {
+                min-height: 450px;
+            }
+
+            &__actions {
+                flex-direction: row;
+            }
         }
     }
 }
